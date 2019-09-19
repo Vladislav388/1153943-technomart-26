@@ -56,20 +56,54 @@
 
       <h1>ПЕРФОРАТОРЫ</h1>
         <section>
-          <h2>производители</h2>
-          <ul>
-            <li>BOSCH</li>
-            <li>ИНТЕРСКОП</li>
-            <li>MAKITA</li>
-            <li>DEWALT</li>
-            <li>HITACHI</li>
-          </ul>
-          <h2>питание</h2>
-          <ul>
-            <li>АККУМУЛЯТОРНЫЕ</li>
-            <li>СЕТЕВЫЕ</li>
-          </ul>  
-          <button type="submit">показать</button>
+          <form class="filter" method="get" action="https://up.htmlacademy.ru/htmlcss/26">
+            <fieldset>
+              <legend><h2>производители</h2></legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="BOSCH" id="filter-bosch">
+                  <label for="filter-bosch">
+                  BOSCH</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="interskop" id="filter-interscop">
+                  <label for="filter-interscop">
+                  ИНТЕРСКОП</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="makita" id="filter-makita">
+                  <label for="filter-makita">
+                  MAKITA</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="dewalt" id="filter-dewalt">
+                  <label for="filter-dewalt">
+                DEWALT</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="hitachi" id="filter-hitachi">
+                  <label for="filter-hitachi">
+                  HITACHI</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend><h2>питание</h2></legend>
+                <ul>
+                  <li>
+                    <input type="radio" name="power-group" id="filter-power">
+                    <label for="filter-power">
+                    АККУМУЛЯТОРНЫЕ</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="power-group" id="filter-seting">
+                    <label for="filter-seting">
+                    СЕТЕВЫЕ</label>
+                  </li>
+                </ul>  
+                <button type="submit">показать</button>
+             </fieldset>
+          </form>
         </section>        
         <section>
           <ul>
